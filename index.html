@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emaza Organics | Natural Hair Care</title>
+
+    <meta name="description" content="Emaza Organics - Natural hair care products crafted to nourish, strengthen and care for your hair.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafaf7;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+            color: #315c43;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #315c43;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #edf5ed, #f8f3e8);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            color: #315c43;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 25px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #315c43;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #234632;
+        }
+
+        section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #315c43;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .product-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #315c43;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .product-card p {
+            color: #666;
+        }
+
+        .benefits {
+            background: #edf5ed;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .benefit {
+            padding: 25px;
+        }
+
+        .benefit h3 {
+            color: #315c43;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #666;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #315c43;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .benefit-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Emaza Organics
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#benefits">Why Emaza</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Emaza Organics</h1>
+
+        <h2>Natural Care. Beautiful Hair.</h2>
+
+        <p>
+            Discover thoughtful hair care inspired by nature,
+            created to nourish, strengthen and care for your hair.
+        </p>
+
+        <a class="button" href="#products">
+            Explore Our Products
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="about">
+
+    <div class="section-title">
+
+        <h2>About Emaza Organics</h2>
+
+        <p>Nature-inspired care for healthier-looking hair.</p>
+
+    </div>
+
+    <div class="about">
+
+        <p>
+            At Emaza Organics, we believe that beautiful hair begins
+            with thoughtful care. Our goal is to create simple,
+            nature-inspired hair care products using carefully selected
+            ingredients.
+        </p>
+
+        <br>
+
+        <p>
+            We focus on quality, care and a gentle approach to everyday
+            hair care, helping you build a healthy and consistent
+            hair-care routine.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="products">
+
+    <div class="section-title">
+
+        <h2>Our Hair Care</h2>
+
+        <p>Explore our nature-inspired collection.</p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <div class="product-card">
+
+            <div class="product-icon">🌿</div>
+
+            <h3>Herbal Hair Oil</h3>
+
+            <p>
+                A nourishing hair oil inspired by traditional
+                herbal hair-care practices.
+            </p>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-icon">🌱</div>
+
+            <h3>Hair Growth Water</h3>
+
+            <p>
+                A refreshing botanical hair-care mist designed
+                for your daily hair routine.
+            </p>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-icon">✨</div>
+
+            <h3>Hair Care Essentials</h3>
+
+            <p>
+                Thoughtfully selected products for a simple
+                and consistent hair-care routine.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="benefits" id="benefits">
+
+    <div class="section-title">
+
+        <h2>Why Choose Emaza?</h2>
+
+        <p>Simple principles behind our brand.</p>
+
+    </div>
+
+
+    <div class="benefit-grid">
+
+
+        <div class="benefit">
+
+            <div class="product-icon">🌿</div>
+
+            <h3>Nature Inspired</h3>
+
+            <p>
+                Inspired by botanical ingredients and
+                traditional hair-care practices.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="product-icon">💚</div>
+
+            <h3>Made With Care</h3>
+
+            <p>
+                We believe every product should be created
+                thoughtfully and responsibly.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="product-icon">✨</div>
+
+            <h3>Simple Beauty</h3>
+
+            <p>
+                Simple routines designed to make everyday
+                hair care easier.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="product-icon">🤍</div>
+
+            <h3>Customer First</h3>
+
+            <p>
+                Your experience and satisfaction matter to us.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+
+        <h2>Get in Touch</h2>
+
+        <p>
+            Interested in Emaza Organics products?
+            We'd love to hear from you.
+        </p>
+
+    </div>
+
+
+    <p>
+        Contact us through WhatsApp for product information,
+        availability and orders.
+    </p>
+
+
+    <!-- Replace 923001234567 with your real WhatsApp number -->
+
+    <a
+        class="button"
+        href="https://wa.me/923363026026"
+        target="_blank">
+        Chat on WhatsApp
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p><strong>Emaza Organics</strong></p>
+
+    <p>Natural Care. Beautiful Hair.</p>
+
+    <p>© 2026 Emaza Organics. All Rights Reserved.</p>
+
+</footer>
+
+
+</body>
+</html>
